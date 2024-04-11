@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="600.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+    <children>
+        <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+        </ImageView>
+        <Button fx:id="select" mnemonicParsing="false" text="Select a image"/>
+        <Label prefHeight="17.0" prefWidth="250.0" text="User name"/>
+        <TextField fx:id="username" maxWidth="250.0">
+            <VBox.margin>
+                <Insets bottom="5.0"/>
+            </VBox.margin>
+        </TextField>
+        <Label prefHeight="17.0" prefWidth="250.0" text="First name"/>
+        <TextField fx:id="firstName" maxWidth="250.0"/>
+        <Label prefHeight="17.0" prefWidth="250.0" text="Last name"/>
+        <TextField fx:id="lastName" maxWidth="250.0"/>
+        <Label prefWidth="250.0" text="Password"/>
+        <TextField fx:id="password" maxWidth="250.0"/>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <Button fx:id="createUser" mnemonicParsing="false" text="Create user"/>
+                <Button fx:id="close" mnemonicParsing="false" text="Close"/>
+            </children>
+        </HBox>
+        <Label fx:id="status"/>
+    </children>
+</VBox>
